@@ -336,6 +336,7 @@ html{
 
 #map{
     filter: grayscale(50%);
+    width: 100%;
 }
 
 /* footer */
