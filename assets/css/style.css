@@ -336,6 +336,11 @@ html{
     background-color: #ccc;
 }
 
+.contact-body i[class*="ti-"]{
+    width: 25px;
+    display: inline-block;
+}
+
 #map{
     filter: grayscale(50%);
     width: 100%;
