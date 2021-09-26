@@ -292,6 +292,7 @@ html{
     padding: 8px 16px;
     display: inline-block;
     margin-bottom: 16px;
+    cursor: pointer;
 }
 
 .places-ticket-btn:hover{
