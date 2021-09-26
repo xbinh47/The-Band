@@ -157,13 +157,13 @@ html{
     width: 800px;
     margin-left: auto;
     margin-right: auto;
+    padding: 64px 0 112px;
 }
 
 #content .class-section .section-heading{
     font-weight: 500;
     font-size: 30px;
     text-align: center;
-    margin-top: 64px;
     letter-spacing: 3px;
 }
 
@@ -201,13 +201,11 @@ html{
     margin-top: 15px;
     width: 154px;
     border-radius: 4px;
-    margin-bottom: 112px;
 }
 
 .tour-section{
     background-color: #000;
     background-clip: border-box;
-    padding: 10px 16px 0px;
 }
 
 .tour-section .ticket-list{
@@ -243,7 +241,6 @@ html{
 
 .places-list{
     margin: 32px -8px 0px;
-    padding-bottom: 106px;
 }
 
 .places-section{
@@ -304,7 +301,6 @@ html{
 
 .contact-body{
     margin-top: 32px;
-    margin-bottom: 112px;
 }
 
 .contact-body .contact-info{
