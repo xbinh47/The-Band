@@ -9,6 +9,12 @@
     margin-right: -16px;
 }
 
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .clear{
     clear: both;
 }
@@ -149,9 +155,7 @@ html{
     font-size: 15px;
 }
 
-#content {
-
-}
+/* content */
 
 #content .class-section{
     width: 800px;
@@ -322,7 +326,7 @@ html{
 } 
 
 
-.contact-form  .send-submit{
+.contact-form .send-submit{
     position: absolute;
     right: 0;
     bottom: -40px;
@@ -332,6 +336,11 @@ html{
     font-size: 15px;
     padding: 8px 16px;
     cursor: pointer;
+}
+
+.contact-form .send-submit:hover{
+    color: #000;
+    background-color: #757575;
 }
 
 #map{
