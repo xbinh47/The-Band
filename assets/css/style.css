@@ -334,6 +334,11 @@ html{
     cursor: pointer;
 }
 
+.contact-form  .send-submit:hover{
+    color: #000;
+    background-color: #ccc;
+}
+
 #map{
     filter: grayscale(50%);
     width: 100%;
