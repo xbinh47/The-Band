@@ -1,0 +1,35 @@
+/* PC */
+@media (min-width: 1024px) {
+    #header .menu-button{
+        display: none;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px){
+    #header .menu-button{
+        display: none;
+    }
+}
+
+
+@media (max-width: 739px){
+    #nav > li{
+        display: block;
+    }
+    #header .header-search .search-button{
+        display: none;
+    }
+    .col, .col-2, .col-3{
+        width: 100%;
+    }
+
+    .places-item{
+        margin-bottom: 16px ;
+    }
+
+    #content .member-img{
+        width: 230px;
+    }
+
+}
