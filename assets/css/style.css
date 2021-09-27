@@ -380,6 +380,9 @@ html{
     margin: 15px 0;
 }
 
+.footer-icon i:hover{
+    color: rgba(0, 0, 0, 0.4);
+}
 
 .modal{
     display: none;

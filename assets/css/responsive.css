@@ -28,8 +28,23 @@
         margin-bottom: 16px ;
     }
 
+    #content .member-list{
+        margin-top: 32px;
+    }
+
     #content .member-img{
         width: 230px;
     }
+
+    
+    #content .member-name{
+        margin-top: 30px;
+    }
+
+    .contact-body .contact-info{
+        margin-bottom: 16px;
+    }
+
+
 
 }
