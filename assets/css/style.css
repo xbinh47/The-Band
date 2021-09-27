@@ -119,6 +119,12 @@ html{
     height: auto !important
 }
 
+#header .header-menu{
+    position: absolute;
+    top:0;
+    right: 0;
+}
+
 #header .header-menu,
 #header .header-search{
     float: right;

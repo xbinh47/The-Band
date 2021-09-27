@@ -18,7 +18,7 @@
                 <li><a href="#band">Band</a></li>
                 <li><a href="#tour">Tour</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="">More
+                <li><a href="#">More
                     <i class="nav-arrow-down ti-angle-down"></i>
                 </a>
                 </a>
@@ -230,14 +230,28 @@
 <script>
     var header = document.getElementById('header')
     var mobileMenu = document.getElementById('mobile-menu')
+    var menuItems = document.querySelectorAll('#nav li a')
     mobileMenu.onclick = function(){
         var isClose = header.clientHeight === 46
         if (isClose){
             header.style.height = 'auto'
         }else{
-            header.style.height = '46px'
+            header.style.height = null
         }
     }
+
+    for (var i=0;i<menuItems.length;i++){
+        var menuItem = menuItems[i]
+        if (i === 4){
+            menuItem.onclick = function(){
+                header.style.overflow = 'visible'
+            }
+        }
+        menuItem.onclick = function(){
+            header.style.height = null        
+        }
+    }
+
 </script>
 
 <!-- Modal -->
