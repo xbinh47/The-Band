@@ -98,7 +98,7 @@
                                 <h3 class="places-heading">New York</h3>
                                 <p class="places-time">Fri 27 Nov 2016</p>
                                 <p class="places-discription">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="places-ticket-btn js-buy-ticket">Buy tickets</button>
+                                <button class="places-ticket-btn js-buy-ticket s-full-width">Buy tickets</button>
                             </div>
                         </div>
     
@@ -108,7 +108,7 @@
                                 <h3 class="places-heading">Paris</h3>
                                 <p class="places-time">Sat 28 Nov 2016</p>
                                 <p class="places-discription">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="places-ticket-btn js-buy-ticket">Buy tickets</button>
+                                <button class="places-ticket-btn js-buy-ticket s-full-width">Buy tickets</button>
                             </div>
                         </div>
 
@@ -118,7 +118,7 @@
                                 <h3 class="places-heading">San Francisco</h3>
                                 <p class="places-time">Sun 29 Nov 2016</p>
                                 <p class="places-discription">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="places-ticket-btn js-buy-ticket">Buy tickets</button>
+                                <button class="places-ticket-btn js-buy-ticket s-full-width">Buy tickets</button>
                             </div>
                         </div>
     
@@ -162,7 +162,7 @@
                                 </div>
                             </div>
                         </form>
-                        <input type="submit" class="send-submit" value="SEND">
+                        <input type="submit" class="send-submit .s-full-width" value="SEND">
                     </div>
                     <div class="clear"></div>
                 </div>
@@ -242,13 +242,13 @@
 
     for (var i=0;i<menuItems.length;i++){
         var menuItem = menuItems[i]
-        if (i === 4){
-            menuItem.onclick = function(){
-                header.style.overflow = 'visible'
+        menuItem.onclick = function(event){
+            var isSubnav = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav')
+            if (isSubnav){
+                event.preventDefault()
+            }else{
+                header.style.height = null        
             }
-        }
-        menuItem.onclick = function(){
-            header.style.height = null        
         }
     }
 

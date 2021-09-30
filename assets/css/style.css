@@ -67,7 +67,6 @@ html{
     font-size: 15px;
     background-color: #000;
     z-index: 1;
-    overflow: hidden;
 }
 
 #nav{
@@ -311,6 +310,7 @@ html{
     display: inline-block;
     margin-bottom: 16px;
     cursor: pointer;
+    text-align: center;
 }
 
 .places-ticket-btn:hover{
